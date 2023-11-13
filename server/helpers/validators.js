@@ -1,6 +1,6 @@
 import { body } from "express-validator";
 
-export const registerValidator = [
+export const authValidator = [
   body("email", "Wrong email format").isString().isEmail(),
   body("password", "Wrong password format")
     .isString()
